@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "elevadorTrab2", "elevadorTrab2\elevadorTrab2.csproj", "{7334B455-724E-4419-AB50-9AAD173CF4B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7334B455-724E-4419-AB50-9AAD173CF4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7334B455-724E-4419-AB50-9AAD173CF4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7334B455-724E-4419-AB50-9AAD173CF4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7334B455-724E-4419-AB50-9AAD173CF4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {821F8CD3-01BC-4DA4-A8AA-8D00CA850AF5}
+	EndGlobalSection
+EndGlobal
