@@ -172,6 +172,7 @@ namespace elevadorTrab2
             if (segundos == 0 && checkBox1.Checked)
             {
                 //loop
+
                 //while
                 //if (aux > auxFinal)
                 //{
