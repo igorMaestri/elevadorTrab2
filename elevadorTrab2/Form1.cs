@@ -17,18 +17,23 @@ namespace elevadorTrab2
         int statusElevador=1; //auxiliar botoes
         int auxFinal = 0; //auxiliar botoes
         int[] statusAndar = new int[6] {0, 1, 0, 0, 0, 0 };
+        int destino = 1;
+
         public Form1()
         {
             InitializeComponent();          
         }
 
-        
+        private void Form_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
 
         private void dButton1_Click(object sender, EventArgs e) //botao acionado
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start(); //inicia a contagem do timer
+                 //inicia a contagem do timer
                 statusAndar[1] = 1;                
             }
 
@@ -42,7 +47,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[2] = 1;
 
             }
@@ -56,7 +61,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[3] = 1;
 
             }
@@ -70,7 +75,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[4] = 1;
 
             }
@@ -84,7 +89,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[5] = 1;
 
             }
@@ -98,7 +103,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[1] = 1;
 
             }
@@ -112,7 +117,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[2] = 1;
 
             }
@@ -126,7 +131,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[3] = 1;
 
             }
@@ -140,7 +145,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[4] = 1;
 
             }
@@ -154,7 +159,7 @@ namespace elevadorTrab2
         {
             if (checkBox1.Checked && !checkBox2.Checked)
             {
-                timer1.Start();
+                
                 statusAndar[5] = 1;
 
             }
@@ -166,50 +171,56 @@ namespace elevadorTrab2
 
         private async void timer1_Tick(object sender, EventArgs e)
         {
-            segundos = 1;
-            segundos--;
+            //segundos = 1;
+            //segundos--;
             
-            if (segundos == 0 && checkBox1.Checked)
+            if (checkBox1.Checked)
             {
-                
+
                 for (int i = 1; i < 6; i++)
                 {
-                  
-
                     if (statusAndar[i] == 1)
                     {
-                        if ((i - statusElevador) > 0)
+                        if (((Math.Abs(destino - statusElevador)) >= (Math.Abs(i - statusElevador))) || ((destino - statusElevador) == 0)){
+                            destino = i;
+
+                        }
+
+                    }
+
+                }    
+                        if ((destino - statusElevador) > 0)
                         {
                             statusElevador++;
                             panel9.Visible = false;
                             panel8.Visible = true;
                             textBox1.Text = statusElevador.ToString();
-                            await Task.Delay(3000); ;
+                            await Task.Delay(3000);
          
                         }
-                        if ((i - statusElevador) < 0)
+                        if ((destino - statusElevador) < 0)
                         {
                             statusElevador--;
                             panel9.Visible = true;
                             panel8.Visible = false;
                             textBox1.Text = statusElevador.ToString();
-                            await Task.Delay(3000); ;
+                            await Task.Delay(3000);
 
                         }
-                        if (i == statusElevador)
+                        if (statusElevador == destino)
                         {
                             textBox1.Text = statusElevador.ToString();
                             panel9.Visible = false;
                             panel8.Visible = false;
-                            statusAndar[i] = 0;
+                            statusAndar[destino] = 0;
                             await Task.Delay(3000); 
 
-                        }
                         
-                    }
+                        
+                        }
 
                     
-                }
+                
                     
                         //}
 
@@ -248,6 +259,11 @@ namespace elevadorTrab2
                 //checkBox1.CheckState = false;
                 MessageBox.Show("Selecione apenas um modo de operação");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
         }
     }
 }

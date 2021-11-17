@@ -83,7 +83,7 @@
             this.fButton1.ForeColor = System.Drawing.Color.Gainsboro;
             this.fButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.fButton1.Location = new System.Drawing.Point(39, 114);
-            this.fButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fButton1.Margin = new System.Windows.Forms.Padding(4);
             this.fButton1.Name = "fButton1";
             this.fButton1.Size = new System.Drawing.Size(60, 41);
             this.fButton1.TabIndex = 0;
@@ -97,7 +97,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.fButton1);
             this.panel1.Location = new System.Drawing.Point(255, 338);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(139, 193);
             this.panel1.TabIndex = 1;
@@ -122,7 +122,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.fButton2);
             this.panel2.Location = new System.Drawing.Point(413, 294);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(145, 238);
             this.panel2.TabIndex = 2;
@@ -151,7 +151,7 @@
             this.fButton2.ForeColor = System.Drawing.Color.Gainsboro;
             this.fButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.fButton2.Location = new System.Drawing.Point(44, 114);
-            this.fButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fButton2.Margin = new System.Windows.Forms.Padding(4);
             this.fButton2.Name = "fButton2";
             this.fButton2.Size = new System.Drawing.Size(60, 89);
             this.fButton2.TabIndex = 2;
@@ -165,7 +165,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.fButton5);
             this.panel3.Location = new System.Drawing.Point(419, 75);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(139, 193);
             this.panel3.TabIndex = 2;
@@ -194,7 +194,7 @@
             this.fButton5.ForeColor = System.Drawing.Color.Gainsboro;
             this.fButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.fButton5.Location = new System.Drawing.Point(39, 117);
-            this.fButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fButton5.Margin = new System.Windows.Forms.Padding(4);
             this.fButton5.Name = "fButton5";
             this.fButton5.Size = new System.Drawing.Size(60, 41);
             this.fButton5.TabIndex = 0;
@@ -208,7 +208,7 @@
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.fButton4);
             this.panel4.Location = new System.Drawing.Point(255, 31);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(145, 238);
             this.panel4.TabIndex = 3;
@@ -237,7 +237,7 @@
             this.fButton4.ForeColor = System.Drawing.Color.Gainsboro;
             this.fButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.fButton4.Location = new System.Drawing.Point(41, 113);
-            this.fButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fButton4.Margin = new System.Windows.Forms.Padding(4);
             this.fButton4.Name = "fButton4";
             this.fButton4.Size = new System.Drawing.Size(60, 90);
             this.fButton4.TabIndex = 2;
@@ -251,7 +251,7 @@
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.fButton3);
             this.panel5.Location = new System.Drawing.Point(577, 294);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(145, 238);
             this.panel5.TabIndex = 4;
@@ -280,7 +280,7 @@
             this.fButton3.ForeColor = System.Drawing.Color.Gainsboro;
             this.fButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.fButton3.Location = new System.Drawing.Point(43, 113);
-            this.fButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fButton3.Margin = new System.Windows.Forms.Padding(4);
             this.fButton3.Name = "fButton3";
             this.fButton3.Size = new System.Drawing.Size(60, 90);
             this.fButton3.TabIndex = 2;
@@ -302,7 +302,7 @@
             this.panel6.Controls.Add(this.button9);
             this.panel6.Controls.Add(this.button10);
             this.panel6.Location = new System.Drawing.Point(51, 10);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(172, 522);
             this.panel6.TabIndex = 4;
@@ -314,7 +314,7 @@
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel8.Location = new System.Drawing.Point(108, 65);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(31, 43);
             this.panel8.TabIndex = 10;
@@ -326,7 +326,7 @@
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel9.Location = new System.Drawing.Point(27, 65);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(31, 43);
             this.panel9.TabIndex = 9;
@@ -342,7 +342,7 @@
             this.dButton1.ForeColor = System.Drawing.Color.Gainsboro;
             this.dButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.dButton1.Location = new System.Drawing.Point(27, 354);
-            this.dButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dButton1.Margin = new System.Windows.Forms.Padding(4);
             this.dButton1.Name = "dButton1";
             this.dButton1.Size = new System.Drawing.Size(49, 22);
             this.dButton1.TabIndex = 9;
@@ -355,7 +355,7 @@
             this.textBox1.Font = new System.Drawing.Font("Swis721 BlkOul BT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Red;
             this.textBox1.Location = new System.Drawing.Point(27, 65);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(112, 44);
             this.textBox1.TabIndex = 8;
@@ -373,7 +373,7 @@
             this.dButton5.ForeColor = System.Drawing.Color.Gainsboro;
             this.dButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.dButton5.Location = new System.Drawing.Point(27, 304);
-            this.dButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dButton5.Margin = new System.Windows.Forms.Padding(4);
             this.dButton5.Name = "dButton5";
             this.dButton5.Size = new System.Drawing.Size(49, 22);
             this.dButton5.TabIndex = 7;
@@ -391,7 +391,7 @@
             this.dButton4.ForeColor = System.Drawing.Color.Gainsboro;
             this.dButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.dButton4.Location = new System.Drawing.Point(91, 330);
-            this.dButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dButton4.Margin = new System.Windows.Forms.Padding(4);
             this.dButton4.Name = "dButton4";
             this.dButton4.Size = new System.Drawing.Size(49, 22);
             this.dButton4.TabIndex = 6;
@@ -409,7 +409,7 @@
             this.dButton3.ForeColor = System.Drawing.Color.Gainsboro;
             this.dButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.dButton3.Location = new System.Drawing.Point(27, 330);
-            this.dButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dButton3.Margin = new System.Windows.Forms.Padding(4);
             this.dButton3.Name = "dButton3";
             this.dButton3.Size = new System.Drawing.Size(49, 22);
             this.dButton3.TabIndex = 5;
@@ -427,7 +427,7 @@
             this.dButton2.ForeColor = System.Drawing.Color.Gainsboro;
             this.dButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.dButton2.Location = new System.Drawing.Point(93, 357);
-            this.dButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dButton2.Margin = new System.Windows.Forms.Padding(4);
             this.dButton2.Name = "dButton2";
             this.dButton2.Size = new System.Drawing.Size(49, 22);
             this.dButton2.TabIndex = 3;
@@ -445,7 +445,7 @@
             this.button9.ForeColor = System.Drawing.Color.Gainsboro;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button9.Location = new System.Drawing.Point(44, 162);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(60, 41);
             this.button9.TabIndex = 2;
@@ -462,7 +462,7 @@
             this.button10.ForeColor = System.Drawing.Color.Gainsboro;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button10.Location = new System.Drawing.Point(44, 113);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(60, 41);
             this.button10.TabIndex = 1;
@@ -473,7 +473,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.checkBox1.Location = new System.Drawing.Point(4, 97);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(84, 21);
             this.checkBox1.TabIndex = 5;
@@ -486,7 +486,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.checkBox2.Location = new System.Drawing.Point(4, 120);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(118, 21);
             this.checkBox2.TabIndex = 6;
@@ -503,7 +503,7 @@
             this.panel7.Controls.Add(this.checkBox2);
             this.panel7.Controls.Add(this.checkBox1);
             this.panel7.Location = new System.Drawing.Point(584, 75);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(139, 193);
             this.panel7.TabIndex = 7;
@@ -556,9 +556,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
