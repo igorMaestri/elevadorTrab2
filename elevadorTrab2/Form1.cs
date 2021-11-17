@@ -164,7 +164,7 @@ namespace elevadorTrab2
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private async void timer1_Tick(object sender, EventArgs e)
         {
             segundos = 1;
             segundos--;
@@ -184,6 +184,7 @@ namespace elevadorTrab2
                             panel9.Visible = false;
                             panel8.Visible = true;
                             textBox1.Text = statusElevador.ToString();
+                            await Task.Delay(3000); ;
          
                         }
                         if ((i - statusElevador) < 0)
@@ -192,7 +193,8 @@ namespace elevadorTrab2
                             panel9.Visible = true;
                             panel8.Visible = false;
                             textBox1.Text = statusElevador.ToString();
-                            
+                            await Task.Delay(3000); ;
+
                         }
                         if (i == statusElevador)
                         {
@@ -200,7 +202,8 @@ namespace elevadorTrab2
                             panel9.Visible = false;
                             panel8.Visible = false;
                             statusAndar[i] = 0;
-                            
+                            await Task.Delay(3000); 
+
                         }
                         
                     }
@@ -214,7 +217,9 @@ namespace elevadorTrab2
                 //}
             }
             
-        }    
+        }  
+        
+
         
         private void checkBox1_CheckedChanged(object sender, EventArgs e) //Manual
         {
