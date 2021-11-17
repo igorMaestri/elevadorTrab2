@@ -14,9 +14,9 @@ namespace elevadorTrab2
     public partial class Form1 : Form
     {
         int segundos; //auxiliar timer
-        int aux=0; //auxiliar botoes
+        int statusElevador=1; //auxiliar botoes
         int auxFinal = 0; //auxiliar botoes
-
+        int[] statusAndar = new int[6] {0, 1, 0, 0, 0, 0 };
         public Form1()
         {
             InitializeComponent();          
@@ -29,7 +29,7 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start(); //inicia a contagem do timer
-                aux = 1;                
+                statusAndar[1] = 1;                
             }
 
             if (!checkBox1.Checked)
@@ -43,8 +43,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 2;
-                
+                statusAndar[2] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -57,8 +57,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 3;
-               
+                statusAndar[3] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -71,8 +71,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 4;
-               
+                statusAndar[4] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -85,8 +85,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 5;
-              
+                statusAndar[5] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -99,8 +99,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 1;
-               
+                statusAndar[1] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -113,8 +113,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 2;
-                
+                statusAndar[2] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -127,8 +127,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 3;
-               
+                statusAndar[3] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -141,8 +141,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 4;
-               
+                statusAndar[4] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -155,8 +155,8 @@ namespace elevadorTrab2
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 timer1.Start();
-                aux = 5;
-               
+                statusAndar[5] = 1;
+
             }
             if (!checkBox1.Checked)
             {
@@ -171,56 +171,43 @@ namespace elevadorTrab2
             
             if (segundos == 0 && checkBox1.Checked)
             {
-                //loop
+                
+                for (int i = 1; i < 6; i++)
+                {
+                  
 
-                //while
-                //if (aux > auxFinal)
-                //{
-                    //aux--;
+                    if (statusAndar[i] == 1)
+                    {
+                        if ((i - statusElevador) > 0)
+                        {
+                            statusElevador++;
+                            panel9.Visible = false;
+                            panel8.Visible = true;
+                            textBox1.Text = statusElevador.ToString();
+         
+                        }
+                        if ((i - statusElevador) < 0)
+                        {
+                            statusElevador--;
+                            panel9.Visible = true;
+                            panel8.Visible = false;
+                            textBox1.Text = statusElevador.ToString();
+                            
+                        }
+                        if (i == statusElevador)
+                        {
+                            textBox1.Text = statusElevador.ToString();
+                            panel9.Visible = false;
+                            panel8.Visible = false;
+                            statusAndar[i] = 0;
+                            
+                        }
+                        
+                    }
 
-
-                    //if (aux < auxFinal)
-                    //{
-                        //aux++;
-
-
-                        //if (aux == auxFinal)
-                        //{
-
-
-
-
-                            if (aux == 1)
-                            {
-                                timer1.Stop();
-                                auxFinal = aux;
-                                textBox1.Text = "1"; //Alterando as propriedades do Objeto 
-                            }
-                            if (aux == 2)
-                            {
-                                timer1.Stop();
-                                auxFinal = aux;
-                                textBox1.Text = "2"; //Alterando as propriedades do Objeto 
-                                panel8.Visible = false;
-                            }
-                            if (aux == 3)
-                            {
-                                timer1.Stop();
-                                auxFinal = aux;
-                                textBox1.Text = "3"; //Alterando as propriedades do Objeto 
-                            }
-                            if (aux == 4)
-                            {
-                                timer1.Stop();
-                                auxFinal = aux;
-                                textBox1.Text = "4"; //Alterando as propriedades do Objeto 
-                            }
-                            if (aux == 5)
-                            {
-                                timer1.Stop();
-                                auxFinal = aux;
-                                textBox1.Text = "5"; //Alterando as propriedades do Objeto 
-                            }
+                    
+                }
+                    
                         //}
 
                     //}
