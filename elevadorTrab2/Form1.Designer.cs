@@ -485,7 +485,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox2.Location = new System.Drawing.Point(4, 120);
+            this.checkBox2.Location = new System.Drawing.Point(4, 144);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(118, 21);

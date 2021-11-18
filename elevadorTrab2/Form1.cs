@@ -13,21 +13,23 @@ namespace elevadorTrab2
 {
     public partial class Form1 : Form
     {
-        int segundos; //auxiliar timer
-        int statusElevador=1; //auxiliar botoes
-        int auxFinal = 0; //auxiliar botoes
+        int statusElevador=1; 
         int[] statusAndar = new int[6] {0, 1, 0, 0, 0, 0 };
         int destino = 1;
+
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         public Form1()
         {
             InitializeComponent();          
         }
 
-        private void Form_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            log.Info("Aplicaçao iniciada");
         }
+
 
         private void dButton1_Click(object sender, EventArgs e) //botao acionado
         {
@@ -261,9 +263,6 @@ namespace elevadorTrab2
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
+        
     }
 }
