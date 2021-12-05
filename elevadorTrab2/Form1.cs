@@ -175,7 +175,7 @@ namespace elevadorTrab2
         {
             //segundos = 1;
             //segundos--;
-            
+
             if (checkBox1.Checked)
             {
 
@@ -183,56 +183,64 @@ namespace elevadorTrab2
                 {
                     if (statusAndar[i] == 1)
                     {
-                        if (((Math.Abs(destino - statusElevador)) >= (Math.Abs(i - statusElevador))) || ((destino - statusElevador) == 0)){
+                        if (((Math.Abs(destino - statusElevador)) >= (Math.Abs(i - statusElevador))) || ((destino - statusElevador) == 0))
+                        {
                             destino = i;
 
                         }
 
                     }
 
-                }    
-                        if ((destino - statusElevador) > 0)
-                        {
-                            statusElevador++;
-                            panel9.Visible = false;
-                            panel8.Visible = true;
-                            textBox1.Text = statusElevador.ToString();
-                            await Task.Delay(3000);
-         
-                        }
-                        if ((destino - statusElevador) < 0)
-                        {
-                            statusElevador--;
-                            panel9.Visible = true;
-                            panel8.Visible = false;
-                            textBox1.Text = statusElevador.ToString();
-                            await Task.Delay(3000);
+                }
+                if ((destino - statusElevador) > 0)
+                {
+                    statusElevador++;
+                    panel9.Visible = false;
+                    panel8.Visible = true;
+                    textBox1.Text = statusElevador.ToString();
+                    await Task.Delay(3000);
 
-                        }
-                        if (statusElevador == destino)
-                        {
-                            textBox1.Text = statusElevador.ToString();
-                            panel9.Visible = false;
-                            panel8.Visible = false;
-                            statusAndar[destino] = 0;
-                            await Task.Delay(3000); 
+                }
+                if ((destino - statusElevador) < 0)
+                {
+                    statusElevador--;
+                    panel9.Visible = true;
+                    panel8.Visible = false;
+                    textBox1.Text = statusElevador.ToString();
+                    await Task.Delay(3000);
 
-                        
-                        
-                        }
+                }
+                if (statusElevador == destino)
+                {
+                    textBox1.Text = statusElevador.ToString();
+                    panel9.Visible = false;
+                    panel8.Visible = false;
+                    statusAndar[destino] = 0;
+                    await Task.Delay(3000);
 
-                    
-                
-                    
-                        //}
 
-                    //}
+
+                }
+
+
+
+
+                //}
+
+                //}
                 //}
             }
-            
-        }  
-        
+            if (checkBox2.Checked)
+            {
+                Random randNum = new Random(); //criando um objeto aleatório chamado randNum
 
+                for (int k = 1; k <= 20; k++)
+                    // listaResultado.Items.Add(randNum.Next(6));
+                    statusElevador = randNum.Next(6);
+                    textBox1.Text = statusElevador.ToString();
+            }
+
+        }
         
         private void checkBox1_CheckedChanged(object sender, EventArgs e) //Manual
         {
