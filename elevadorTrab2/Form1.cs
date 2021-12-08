@@ -193,62 +193,7 @@ namespace elevadorTrab2
             panel9.Visible = Global.panel_9;
             panel8.Visible = Global.panel_8;
             textBox1.Text = Global.text;
-            /*if (checkBox1.Checked || checkBox2.Checked)
-            {
-
-                for (int i = 1; i < 6; i++)
-                {
-                    if (Global.statusAndar[i] == 1)
-                    {
-                        if (((Math.Abs(Global.destino - Global.statusElevador)) >= (Math.Abs(i - Global.statusElevador))) || ((Global.destino - Global.statusElevador) == 0))
-                        {
-                            Global.destino = i;
-
-                        }
-
-                    }
-
-                }
-                if ((Global.destino - Global.statusElevador) > 0)
-                {
-                    Global.statusElevador++;
-                    panel9.Visible = false;
-                    panel8.Visible = true;
-                    textBox1.Text = Global.statusElevador.ToString();
-                    await Task.Delay(3000);
-
-                }
-                if ((Global.destino - Global.statusElevador) < 0)
-                {
-                    Global.statusElevador--;
-                    panel9.Visible = true;
-                    panel8.Visible = false;
-                    textBox1.Text = Global.statusElevador.ToString();
-                    await Task.Delay(3000);
-
-                }
-                if (Global.statusElevador == Global.destino)
-                {
-                    textBox1.Text = Global.statusElevador.ToString();
-                    panel9.Visible = false;
-                    panel8.Visible = false;
-                    Global.statusAndar[Global.destino] = 0;
-                    await Task.Delay(3000);
-
-
-
-                }
-
-
-
-
-                //}
-
-                //}
-                //}
-            }
             
-              */
         }
         
         private void checkBox1_CheckedChanged(object sender, EventArgs e) //Manual

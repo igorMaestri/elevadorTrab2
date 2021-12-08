@@ -29,7 +29,7 @@ namespace automatico
                                                //{
                 int numero = randNum.Next(6);
                 elevadorTrab2.Global.statusAndar[numero] = 1;
-                await Task.Delay(3000);
+                //await Task.Delay(3000);
                 // listaResultado.Items.Add(randNum.Next(6));
                 //}
 

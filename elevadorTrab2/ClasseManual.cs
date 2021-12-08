@@ -37,7 +37,7 @@ namespace manual
                     }
 
                 }
-                await Task.Delay(3000);
+                //await Task.Delay(3000);
                 if ((elevadorTrab2.Global.destino - elevadorTrab2.Global.statusElevador) > 0)
                 {
                     elevadorTrab2.Global.statusElevador++;
