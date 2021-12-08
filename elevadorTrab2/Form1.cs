@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-using Simulador;
+using automatico;
 
 namespace elevadorTrab2
 {
@@ -179,12 +179,21 @@ namespace elevadorTrab2
 
         private async void timer1_Tick(object sender, EventArgs e)
         {
-            //segundos = 1;
+            Global.tempo++;
             //segundos--;
-            Simulador.Class1.aleatorio();
-           
-            
-            if (checkBox1.Checked || checkBox2.Checked)
+            if (Global.tempo == 3)
+            {
+
+                automatico.ClasseAutomatico.Aleatorio();
+                Global.tempo = 0;
+            }
+
+            manual.ClasseManual.FuncManual();
+
+            panel9.Visible = Global.panel_9;
+            panel8.Visible = Global.panel_8;
+            textBox1.Text = Global.text;
+            /*if (checkBox1.Checked || checkBox2.Checked)
             {
 
                 for (int i = 1; i < 6; i++)
@@ -239,11 +248,12 @@ namespace elevadorTrab2
                 //}
             }
             
-
+              */
         }
         
         private void checkBox1_CheckedChanged(object sender, EventArgs e) //Manual
         {
+            Global.checkbox1 = checkBox1.Checked;
             if (checkBox1.Checked && !checkBox2.Checked)
             {
                 MessageBox.Show("Elevador em modo Manual");
@@ -256,9 +266,10 @@ namespace elevadorTrab2
             }
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e) //Automatico
+        private void checkBox2_CheckedChanged(object sender, EventArgs e) //automatico
         {
             Global.checkbox2 = checkBox2.Checked;
+            Global.statusAndar = new int[6] {0, 0, 0, 0, 0, 0};
             if (checkBox2.Checked && !checkBox1.Checked)
             {
                 MessageBox.Show("Elevador em modo Automático"); 
@@ -280,5 +291,10 @@ namespace elevadorTrab2
         public static int[] statusAndar = new int[6] { 0, 1, 0, 0, 0, 0 };
         public static int destino = 1;
         public static bool checkbox2 = false;
+        public static bool checkbox1 = false;
+        public static bool panel_9 = false;
+        public static bool panel_8 = false;
+        public static string text = "1";
+        public static int tempo = 2;
     }
 }
